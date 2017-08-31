@@ -1,0 +1,44 @@
+#!/bin/bash
+
+	
+	
+	
+	
+	
+
+function backup {
+
+#Read in file to be backed up
+echo "Please enter a file to back up"
+read backupfile
+
+#Check that back up file exists
+
+if [ -r $backupfile ]; then
+	echo "File exists"
+else
+	echo "File does not exist"
+fi
+
+#Read in back up location
+
+echo "Enter the back up location"
+read backuplocation
+
+#Check that back up location exists
+
+if [ -r $backuplocation ]; then
+	echo "File exists"
+else
+	"File does not exist"
+fi
+
+#Copy the file 
+
+cp $backupfile $backuplocation
+
+#Completion message on screen
+
+echo "File has been copied"
+
+}

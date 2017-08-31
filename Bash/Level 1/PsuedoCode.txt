@@ -1,0 +1,4 @@
+#!/bin/bash
+ 
+whiptail --title "Operating Systems" --infobox "Welcome to the back up script utility" 8 78
+whiptail --textbox test_texbox 12 80

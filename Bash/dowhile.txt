@@ -1,0 +1,17 @@
+while :
+do
+
+echo "== Main Menu =="
+echo "1) Back Up"
+echo "2) Create back up file"
+echo "3) Exit"
+
+read userinput
+
+case $userinput in
+
+1) echo "1" ;;
+2) echo "2" ;;
+*) echo "exit" ;;
+
+esac
